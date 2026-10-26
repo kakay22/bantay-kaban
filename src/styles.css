@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&family=Share+Tech+Mono&display=swap');
+
+:root {
+    --font: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --mono: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --ink: #efe6d2;
+    --ok: #4caf7a;
+    --bad: #c0392b;
+    color-scheme: dark;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px)
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    background: #000;
+    color: var(--ink);
+    font-family: var(--font);
+    overflow: hidden;
+    user-select: none
+}
+
+/* realistic wooden table: base tone, plank tints, turbulence grain, seams, lamp light */
+.table {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background-color: #4f311b;
+    background-image:
+        radial-gradient(ellipse 70% 60% at 50% 42%, rgba(255, 190, 110, .32), rgba(255, 170, 90, .08) 55%, transparent 75%),
+        radial-gradient(ellipse at center, transparent 35%, rgba(0, 0, 0, .88) 100%),
+        repeating-linear-gradient(0deg, transparent 0 116px, rgba(0, 0, 0, .85) 116px 118px, rgba(255, 210, 150, .12) 118px 120px),
+        repeating-linear-gradient(0deg, rgba(0, 0, 0, 0) 0 120px, rgba(0, 0, 0, .16) 120px 240px, rgba(255, 200, 130, .07) 240px 360px),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='700' height='700'><filter id='f' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.003 0.55' numOctaves='5' seed='11' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.16  0 0 0 0 0.08  0 0 0 0 0.03  0 0 0 1.5 -0.5'/></filter><rect width='100%25' height='100%25' filter='url(%23f)'/></svg>"),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='500' height='500'><filter id='g' x='0' y='0' width='100%25' height='100%25'><feTurbulence type='fractalNoise' baseFrequency='0.9 0.02' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.9  0 0 0 0 0.65  0 0 0 0 0.4  0 0 0 0.5 -0.18'/></filter><rect width='100%25' height='100%25' filter='url(%23g)'/></svg>"),
+        linear-gradient(180deg, #5d3a20, #4a2d18)
+}
+
+.pol {
+  position: absolute;
+  background: #eee6d2;
+  padding: 8px 8px 30px;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5),
+              0 14px 26px rgba(0, 0, 0, 0.1);
+  transform: rotate(var(--r, 0deg));
+  backface-visibility: hidden;
+}
+
+.img {
+  display: block;
+  line-height: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #222;
+}
+
+
+.img svg,
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cap {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 6px;
+    text-align: center;
+    font: 600 12px var(--font);
+    color: #4a4033;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.tb .pol {
+    width: 150px
+}
+
+.main {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    width: min(86vw, 440px);
+    transform: translate(-50%, -56%)
+}
+
+.main .pol {
+    position: relative;
+    width: 100%
+}
+
+.in {
+    animation: in .6s cubic-bezier(.2, .8, .2, 1) both
+}
+
+.L {
+    animation: oL .55s ease-in both
+}
+
+.R {
+    animation: oR .55s ease-in both
+}
+
+@keyframes in {
+    from {
+        transform: translateX(130%) rotate(12deg)
+    }
+
+    to {
+        transform: rotate(var(--r))
+    }
+}
+
+@keyframes oL {
+    to {
+        transform: translateX(-140%) rotate(-16deg)
+    }
+}
+
+@keyframes oR {
+    to {
+        transform: translateX(140%) rotate(16deg)
+    }
+}
+
+.stamp {
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    font: 700 32px var(--mono);
+    letter-spacing: .1em;
+    padding: 4px 14px;
+    border: 5px solid;
+    transform: translate(-50%, -50%) rotate(-14deg);
+    animation: pop .25s ease-out both;
+    background: rgba(238, 230, 210, .4)
+}
+
+.stamp.g {
+    color: #2e8b57
+}
+
+.stamp.r {
+    color: #b3261e
+}
+
+@keyframes pop {
+    from {
+        transform: translate(-50%, -50%) rotate(-14deg) scale(2.2);
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.ctr {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto
+}
+
+.shade {
+    background: #000
+}
+
+.shade:has(.typ) {
+    align-items: flex-start;
+    padding-top: max(7vh, 28px);
+    padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px))
+}
+
+.shade:has(.typ) .card {
+    margin: 0 auto
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: min(100%, 560px);
+    margin: auto
+}
+
+.chip {
+    font: 500 15px var(--font);
+    color: #d8c9a8;
+    text-shadow: 0 2px 8px #000
+}
+
+h1 {
+    font-size: clamp(42px, 12vw, 84px);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.05;
+    text-shadow: 0 0 26px rgba(179, 38, 30, .75), 0 4px 12px #000;
+    transform: rotate(-2deg)
+}
+
+.sub {
+    opacity: .9;
+    margin: 0;
+    max-width: 440px;
+    line-height: 1.5;
+    text-shadow: 0 2px 8px #000
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+button,
+.btn {
+    font: 600 17px/1.2 var(--font);
+    cursor: pointer;
+    color: var(--ink);
+    background: #1b120b;
+    border: 2px solid #8a6a46;
+    padding: 13px 24px;
+    font-size: 17px;
+    letter-spacing: .01em;
+    display: inline-block;
+    border-radius: 0
+}
+
+button:hover,
+.btn:hover {
+    background: #2c1d11
+}
+
+button:focus-visible,
+.btn:focus-within {
+    outline: 3px solid #f0c674
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: default
+}
+
+.btn.sm {
+    font-size: 14px;
+    padding: 9px 14px
+}
+
+.st {
+    font: 13px/1.5 var(--mono);
+    opacity: .85;
+    max-width: 440px;
+    text-shadow: 0 2px 6px #000
+}
+
+/* typing page: pure black screen, white text only */
+.typ {
+    font: clamp(14px, 3.9vw, 17px)/1.7 var(--mono);
+    color: #fff;
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 0;
+    max-width: 540px;
+    width: 100%
+}
+
+.cur {
+    display: inline-block;
+    width: 9px;
+    height: 1em;
+    background: #fff;
+    vertical-align: -2px;
+    margin-left: 2px;
+    animation: bl 1s steps(2) infinite
+}
+
+@keyframes bl {
+    50% {
+        opacity: 0
+    }
+}
+
+.shade button {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+.shade button:hover {
+    background: #fff;
+    color: #000
+}
+
+.hud {
+    position: absolute;
+    top: calc(10px + env(safe-area-inset-top, 0px));
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 17px;
+    text-shadow: 0 2px 6px #000
+}
+
+.prog {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    top: calc(44px + env(safe-area-inset-top, 0px));
+    height: 2px;
+    background: rgba(255, 255, 255, .18)
+}
+
+.prog i {
+    display: block;
+    height: 100%;
+    background: var(--bad);
+    transition: width .4s
+}
+
+.note {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: calc(92px + env(safe-area-inset-bottom, 0px));
+    max-width: 520px;
+    margin: 0 auto;
+    background: rgba(10, 6, 3, .92);
+    border: 1px solid #7a5a3a;
+    padding: 10px 14px;
+    font-size: 15px;
+    line-height: 1.45
+}
+
+.note b.g {
+    color: #6fd39b
+}
+
+.note b.r {
+    color: #ff8a7a
+}
+
+.bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 12px;
+    padding: 14px 14px calc(14px + env(safe-area-inset-bottom, 0px));
+    background: linear-gradient(transparent, rgba(0, 0, 0, .85))
+}
+
+.bar button {
+    flex: 1
+}
+
+.irr {
+    border-color: var(--bad);
+    color: #ff9a8a
+}
+
+.leg {
+    border-color: #8a6a46
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .in {
+        animation-duration: .01s
+    }
+
+    .cur {
+        animation: none
+    }
+}
+
+.table.black {
+    background: #000
+}
+
+/* title screen: darker scrim so the heading and text stay readable over the photos */
+.ctr:not(.shade) {
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .82) 0%, rgba(0, 0, 0, .66) 55%, rgba(0, 0, 0, .5) 100%)
+}
+
+.ctr:not(.shade) h1 {
+    color: #fff;
+    text-shadow: 0 0 28px rgba(179, 38, 30, .8), 0 3px 14px #000, 0 0 3px #000
+}
+
+.ctr:not(.shade) .chip {
+    color: #f1e8d4;
+    text-shadow: 0 2px 10px #000, 0 0 3px #000
+}
+
+.ctr:not(.shade) .sub {
+    color: #f6efdd;
+    opacity: 1;
+    font-size: 17px;
+    text-shadow: 0 2px 10px #000, 0 0 3px #000
+}
+
+.ctr:not(.shade) .st {
+    color: #e7dcc2;
+    opacity: 1
+}
+
+
+/* =========================================
+   HORROR TYPOGRAPHY
+========================================= */
+
+:root {
+  --font-horror: "Creepster", fantasy;
+  --font-typewriter: "Special Elite", "Courier New", monospace;
+  --font-terminal: "Share Tech Mono", monospace;
+}
+
+/* Default text */
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-typewriter);
+}
+
+/* Main game title and horror headings */
+h1,
+h2,
+.game-title,
+.title-text,
+.logo-title,
+.title-heading {
+  font-family: var(--font-horror);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+/* Large title treatment */
+.game-title,
+.title-text,
+.logo-title,
+.title-heading {
+  text-transform: uppercase;
+  text-shadow:
+    0 2px 0 #250808,
+    0 0 8px rgba(150, 0, 0, 0.35),
+    2px 3px 0 rgba(0, 0, 0, 0.65);
+}
+
+/* Terminal labels, scores, counters */
+small,
+.tiny-label,
+.status,
+.status-label,
+.progress-label,
+.system-status,
+.photo-meta,
+button kbd {
+  font-family: var(--font-terminal);
+  letter-spacing: 1px;
+}
+
+/* Buttons should remain easy to read */
+button {
+  letter-spacing: 0.6px;
+}
+
+/* Slightly unsettling hover effect */
+.game-title:hover,
+.title-text:hover,
+.logo-title:hover,
+.title-heading:hover {
+  text-shadow:
+    0 0 5px rgba(255, 45, 45, 0.6),
+    0 0 18px rgba(150, 0, 0, 0.4);
+  transition: text-shadow 250ms ease;
+}
+
+/* Mobile readability */
+@media (max-width: 600px) {
+  h1,
+  .game-title,
+  .title-text,
+  .logo-title,
+  .title-heading {
+    letter-spacing: 1px;
+    line-height: 1.05;
+  }
+
+  body,
+  button {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   INTRO / TITLE SCREEN — LIGHTER HORROR
+========================================= */
+
+/* Keep the scene atmospheric without crushing the details */
+.title-screen,
+.intro-screen,
+.title-scene {
+  filter: none;
+}
+
+/* Reduce common dark overlays */
+.title-screen::before,
+.title-screen::after,
+.intro-screen::before,
+.intro-screen::after,
+.title-scene::before,
+.title-scene::after {
+  opacity: 0.35;
+}
+
+/* Keep the title clearly visible */
+.title-screen h1,
+.intro-screen h1,
+.title-scene h1 {
+  color: #e5d5c5;
+  text-shadow:
+    0 2px 3px rgba(0, 0, 0, 0.85),
+    0 0 12px rgba(150, 20, 20, 0.35);
+}
+
+/* Improve supporting text visibility */
+.title-screen p,
+.intro-screen p,
+.title-scene p {
+  color: #c9c0b6;
+}
+
+/* Avoid making the entire intro image too dark */
+.title-screen img,
+.intro-screen img,
+.title-scene img {
+  filter: brightness(0.85) contrast(1.05);
+}
+
+/* HORROR INTRO TERMINAL */
+
+.horror-intro {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(
+      ellipse at 50% 40%,
+      rgba(88, 52, 42, 0.25),
+      rgba(9, 9, 10, 0.48) 85%
+    );
+  padding: 20px;
+}
+
+.horror-intro-card {
+  width: min(100%, 680px);
+  margin-inline: auto;
+  padding: clamp(22px, 5vw, 42px);
+  color: #e1d8cb;
+  background: rgba(24, 22, 21, 0.94);
+  border: 1px solid rgba(176, 139, 113, 0.35);
+  box-shadow:
+    0 18px 65px rgba(0, 0, 0, 0.42),
+    inset 0 0 35px rgba(125, 72, 48, 0.07);
+}
+
+.intro-stamp {
+  margin-bottom: 22px;
+  color: #b7a18b;
+  font: 12px "Share Tech Mono", monospace;
+  letter-spacing: 2px;
+}
+
+.intro-terminal-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(180, 150, 125, 0.22);
+  color: #c6a49a;
+  font: 11px "Share Tech Mono", monospace;
+  letter-spacing: 1px;
+}
+
+.intro-status-dot {
+  flex: 0 0 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b94a43;
+  box-shadow: 0 0 8px rgba(220, 45, 45, 0.55);
+  animation: intro-status-pulse 2.2s infinite;
+}
+
+.intro-typed-copy {
+  min-height: 180px;
+  color: #e1d8cb;
+  font: 16px/1.9 "Special Elite", "Courier New", monospace;
+  overflow-wrap: anywhere;
+  animation: intro-screen-flicker 8s infinite;
+}
+
+.intro-typed-copy p {
+  margin: 0 0 16px;
+}
+
+/* Style the cursor if Typer outputs text inside a span */
+.intro-typed-copy .typing-cursor,
+.intro-typed-copy .cursor {
+  color: #e0645b;
+  animation: intro-cursor-blink 0.8s steps(2, start) infinite;
+}
+
+.horror-start-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 26px;
+  padding: 14px 18px;
+  color: #f1e8dd;
+  background: #612b29;
+  border: 1px solid #a24e45;
+  font: 16px "Share Tech Mono", monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.horror-start-button:hover {
+  background: #813632;
+  border-color: #d17467;
+}
+
+.intro-footer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(180, 150, 125, 0.18);
+  color: #998a7d;
+  font: 10px "Share Tech Mono", monospace;
+  letter-spacing: 1px;
+}
+
+@keyframes intro-cursor-blink {
+  50% { opacity: 0; }
+}
+
+@keyframes intro-status-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+@keyframes intro-screen-flicker {
+  0%, 96%, 98%, 100% { opacity: 1; }
+  97% { opacity: 0.92; }
+}
+
+@media (max-width: 600px) {
+  .horror-intro {
+    padding: 12px;
+  }
+
+  .horror-intro-card {
+    padding: 22px 18px;
+  }
+
+  .intro-typed-copy {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .intro-stamp {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .intro-terminal-status {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-status-dot,
+  .intro-typed-copy,
+  .intro-typed-copy .typing-cursor,
+  .intro-typed-copy .cursor {
+    animation: none;
+  }
+}.typer-screen-tap {
+  position: relative;
+  min-height: 100%;
+  cursor: pointer;
+}
+
+.typer-skip-hint {
+  position: fixed;
+  right: 24px;
+  bottom: 20px;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  pointer-events: none;
+  animation: typerHintBlink 1.2s steps(2, start) infinite;
+  z-index: 100;
+}
+
+@keyframes typerHintBlink {
+  to {
+    visibility: hidden;
+  }
+}

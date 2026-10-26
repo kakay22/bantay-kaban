@@ -1,0 +1,94 @@
+
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  color: #d7d2c8;
+  background:
+    radial-gradient(ellipse at center, #25231f 0%, #111110 48%, #050505 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.intro-terminal {
+  width: min(100%, 640px);
+  padding: clamp(18px, 2vw, 42px);
+  border: 1px solid #464139;
+  border-radius: 1rem;
+  background: rgb(10 10 9 / 78%);
+  box-shadow: 0 0 70px rgb(0 0 0 / 65%);
+}
+
+.intro-label {
+  margin: 0 0 36px;
+  color: #9a3838;
+  font: 12px/1.5 monospace;
+  letter-spacing: 0.18em;
+}
+
+.intro-line {
+  min-height: 100px;
+  margin: 0;
+  color: #e6e0d5;
+  font: clamp(18px, 3.5vw, 25px)/1.8 monospace;
+  overflow-wrap: anywhere;
+}
+
+.intro-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  color: #a33c3c;
+  animation: intro-blink 0.8s steps(2, start) infinite;
+}
+
+.intro-hint {
+  margin: 28px 0 18px;
+  color: #a49b8d;
+  font: 11px/1.5 monospace;
+  letter-spacing: 0.12em;
+}
+
+.intro-arrow {
+  color: #b84b4b;
+  animation: intro-pulse 1.2s ease-in-out infinite;
+}
+
+.intro-progress {
+  height: 2px;
+  overflow: hidden;
+  background: #302d28;
+}
+
+.intro-progress span {
+  display: block;
+  height: 100%;
+  background: #9e3939;
+  transition: width 180ms ease;
+}
+
+.intro-counter {
+  margin: 12px 0 0;
+  color: #777168;
+  text-align: right;
+  font: 11px monospace;
+}
+
+@keyframes intro-blink {
+  to { visibility: hidden; }
+}
+
+@keyframes intro-pulse {
+  50% { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-cursor,
+  .intro-arrow {
+    animation: none;
+  }
+}

@@ -1,0 +1,488 @@
+[
+  {
+    "id": "riprap-inspection-001",
+    "file": "bbm-walking-along-the-riprap.png",
+    "category": "RIPRAP_INSPECTION",
+    "irregular": true,
+    "caption": "Riverside flood-control inspection",
+    "why": "The image raises questions about the condition of the flood-control structure and whether the completed work is being properly monitored.",
+    "tags": [
+      "riprap",
+      "river",
+      "inspection",
+      "flood-control"
+    ],
+    "source": "",
+    "sourceVerified": false
+  },
+  {
+    "id": "damaged-bridge-001",
+    "file": "damaged-bridge/bridge-cracked.png",
+    "category": "DAMAGED_BRIDGE",
+    "irregular": true,
+    "caption": "Brgy. Dela Paz bridge",
+    "why": "Visible damage raises concerns about the bridge's structural condition and the need for a proper safety inspection.",
+    "tags": [
+      "bridge",
+      "cracks",
+      "infrastructure"
+    ],
+    "source": "",
+    "sourceVerified": false
+  },
+  {
+    "id": "rooftop-flooding-001",
+    "file": "flood-roof-level/flood-roof-level.png",
+    "category": "ROOFTOP_LEVEL_FLOODING",
+    "irregular": true,
+    "caption": "Brgy. Dela Paz residential area",
+    "why": "Floodwater has submerged most of the houses, showing the severe impact of flooding on the community.",
+    "tags": [
+      "flood",
+      "houses",
+      "rooftop-level",
+      "disaster"
+    ],
+    "source": "",
+    "sourceVerified": false
+  },
+  {
+    "id": "broken-flood-wall-001",
+    "file": "damaged-river-walls/flood-wall-cracked.png",
+    "category": "BROKEN_FLOOD_WALL",
+    "irregular": true,
+    "caption": "Brgy. Dela Paz riverside",
+    "why": "Cracks are visible along the flood wall. The cause and extent of the damage would need to be verified through inspection.",
+    "tags": [
+      "flood-wall",
+      "cracks",
+      "river",
+      "flood-control"
+    ],
+    "source": "",
+    "sourceVerified": false
+  },
+  {
+    "id": "street-flooding-001",
+    "file": "flood-street/motorist-struggles-in-flood.png",
+    "category": "STREET_FLOODING",
+    "irregular": true,
+    "caption": "Brgy. Dela Paz street",
+    "why": "Floodwater has made the road difficult to navigate, creating hazards for motorists and motorcycle riders.",
+    "tags": [
+      "street",
+      "flash-flood",
+      "motorists",
+      "drainage"
+    ],
+    "source": "",
+    "sourceVerified": false
+  },
+  {
+    "id": "damaged-river-wall-002",
+    "file": "damaged-river-walls/image1.png",
+    "category": "CRACKED_RIVER_EMBANKMENT",
+    "irregular": true,
+    "caption": "Damaged riverside flood protection",
+    "why": "The image is flagged for inspection of the riverbank protection. Confirm the visible damage and its extent against the actual photograph.",
+    "tags": [
+      "river-wall",
+      "embankment",
+      "flood-control"
+    ],
+    "source": "",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-river-bank-001",
+    "file": "clean/clean-river-bank.png",
+    "category": "CLEAN_RIVER_BANK",
+    "irregular": false,
+    "caption": "Well-maintained riverbank",
+    "why": "The riverbank appears stable and well-maintained, with no obvious signs of damage or suspicious activity visible in the photograph. This visual assessment alone does not establish whether corruption occurred.",
+    "tags": [
+      "river",
+      "riverbank",
+      "clean",
+      "flood-control",
+      "normal-condition"
+    ],
+    "source": "",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-riverbank-002",
+    "file": "damaged-riverbank-002.jpg",
+    "category": "RIVERBANK_DAMAGE",
+    "irregular": true,
+    "caption": "Eroded riverbank",
+    "why": "Visible erosion along the riverbank warrants inspection to determine whether the protection works are damaged or inadequate.",
+    "tags": [
+      "river",
+      "erosion",
+      "flood-control"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-flooding-002",
+    "file": "flooded-residential-area-002.jpg",
+    "category": "SEVERE_FLOODING",
+    "irregular": true,
+    "caption": "Flooded residential community",
+    "why": "Floodwater has entered the residential area. Further evidence is needed to establish whether infrastructure failure or project irregularities contributed to the flooding.",
+    "tags": [
+      "flood",
+      "residential",
+      "disaster"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Floods_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-bridge-002",
+    "file": "bridge-structural-damage-002.jpg",
+    "category": "BRIDGE_DAMAGE",
+    "irregular": true,
+    "caption": "Bridge showing structural damage",
+    "why": "Visible structural damage requires an engineering assessment and comparison with maintenance and construction records.",
+    "tags": [
+      "bridge",
+      "damage",
+      "inspection"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Bridges_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-floodwall-002",
+    "file": "floodwall-damage-002.jpg",
+    "category": "FLOODWALL_DAMAGE",
+    "irregular": true,
+    "caption": "Damaged flood protection wall",
+    "why": "The apparent damage warrants verification of the structure's condition, repair history, and project specifications.",
+    "tags": [
+      "floodwall",
+      "concrete",
+      "inspection"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-floodwater-002",
+    "file": "floodwater-road-002.jpg",
+    "category": "INVESTIGATION_PHOTO",
+    "irregular": true,
+    "caption": "Caduang Tete, San Gabriel, Poblacion and Santa Rita, Macabebe Road, Pampanga Aftermath of Typhoon Doksuri (2023) Typhoon Khanun (2023)",
+    "why": "Review this scene for possible damage or warning signs. The photograph alone does not prove corruption.",
+    "tags": [
+      "Philippines",
+      "photo-review",
+      "investigation"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Macabebe_(Pampanga_Province;_2023-08-08)_E911a_19.jpg",
+    "sourceVerified": true
+  },
+  {
+    "id": "flagged-riverwall-003",
+    "file": "riverwall-erosion-003.jpg",
+    "category": "RIVERWALL_DAMAGE",
+    "irregular": true,
+    "caption": "Riverwall with possible erosion damage",
+    "why": "The visible riverbank condition should be checked against construction specifications and maintenance records.",
+    "tags": [
+      "riverwall",
+      "erosion",
+      "infrastructure"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-unfinished-001",
+    "file": "unfinished-infrastructure-001.jpg",
+    "category": "UNFINISHED_PROJECT",
+    "irregular": true,
+    "caption": "Infrastructure project under construction",
+    "why": "The photograph may show incomplete work. Verify the project schedule and completion status before determining whether an irregularity exists.",
+    "tags": [
+      "unfinished",
+      "construction",
+      "project"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-river-flood-001",
+    "file": "overflowing-river-001.jpg",
+    "category": "INVESTIGATION_PHOTO",
+    "irregular": true,
+    "caption": "Mananga River Overflows Amid Heavy Rains from Typhoon Tino",
+    "why": "Review this scene for possible damage or warning signs. The photograph alone does not prove corruption.",
+    "tags": [
+      "Philippines",
+      "photo-review",
+      "investigation"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Mananga_River_5.jpg",
+    "sourceVerified": true
+  },
+  {
+    "id": "flagged-dike-001",
+    "file": "damaged-dike-001.jpg",
+    "category": "DIKE_DAMAGE",
+    "irregular": true,
+    "caption": "Dike requiring inspection",
+    "why": "Any visible displacement, erosion, or break in the dike should be assessed against the approved engineering design.",
+    "tags": [
+      "dike",
+      "damage",
+      "engineering"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "flagged-project-evidence-001",
+    "file": "flood-project-evidence-001.jpg",
+    "category": "INVESTIGATION_PHOTO",
+    "irregular": true,
+    "caption": "NIA road flood control crumbling cement works irrigation creek wall",
+    "why": "Review this scene for possible damage or warning signs. The photograph alone does not prove corruption.",
+    "tags": [
+      "Philippines",
+      "photo-review",
+      "investigation"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Flood_control_projects_controversy_2026-05-22_in_Purok_2_Piel_Baliwag.jpg",
+    "sourceVerified": true
+  },
+  {
+    "id": "clean-riverbank-002",
+    "file": "clean/clean-riverbank-002.jpg",
+    "category": "CLEAN_RIVERBANK",
+    "irregular": false,
+    "caption": "Healthy riverside landscape",
+    "why": "The riverbank appears stable in the photograph, with no obvious signs of structural damage.",
+    "tags": [
+      "river",
+      "riverbank",
+      "landscape"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Rivers_of_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-bridge-002",
+    "file": "clean/clean-bridge-002.jpg",
+    "category": "INTACT_BRIDGE",
+    "irregular": false,
+    "caption": "Bridge in normal condition",
+    "why": "The visible bridge structure appears intact. A photograph cannot establish its full structural safety.",
+    "tags": [
+      "bridge",
+      "infrastructure",
+      "transport"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Bridges_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-river-002",
+    "file": "clean/clean-river-002.jpg",
+    "category": "RIVER_LANDSCAPE",
+    "irregular": false,
+    "caption": "Philippine river landscape",
+    "why": "The photograph shows a river landscape without obvious signs of infrastructure damage.",
+    "tags": [
+      "river",
+      "nature",
+      "Philippines"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Rivers_of_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-riprap-002",
+    "file": "clean/clean-riprap-002.jpg",
+    "category": "INTACT_RIPRAP",
+    "irregular": false,
+    "caption": "Stone riverbank protection",
+    "why": "The visible stone protection appears orderly, with no obvious displacement in the selected photograph.",
+    "tags": [
+      "riprap",
+      "riverbank",
+      "protection"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-floodwall-001",
+    "file": "clean/clean-floodwall-001.jpg",
+    "category": "INTACT_FLOODWALL",
+    "irregular": false,
+    "caption": "Flood protection wall",
+    "why": "The selected photograph shows a flood protection structure without obvious visible damage.",
+    "tags": [
+      "floodwall",
+      "concrete",
+      "infrastructure"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-riverside-001",
+    "file": "clean/clean-riverside-001.jpg",
+    "category": "RIVERSIDE_AREA",
+    "irregular": false,
+    "caption": "Riverside community",
+    "why": "The riverside area appears orderly in the photograph, with no obvious infrastructure anomaly.",
+    "tags": [
+      "riverside",
+      "community",
+      "river"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Rivers_of_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-road-001",
+    "file": "clean/clean-road-001.jpg",
+    "category": "ROAD_INFRASTRUCTURE",
+    "irregular": false,
+    "caption": "Road beside a river",
+    "why": "The road appears passable and shows no obvious visible damage in the selected photograph.",
+    "tags": [
+      "road",
+      "transport",
+      "infrastructure"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Bridges_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-bridge-river-001",
+    "file": "clean/clean-bridge-river-001.jpg",
+    "category": "BRIDGE_AND_RIVER",
+    "irregular": false,
+    "caption": "Bridge crossing a Philippine river",
+    "why": "The photograph shows a bridge and river without obvious signs of damage to the visible structure.",
+    "tags": [
+      "bridge",
+      "river",
+      "landscape"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Bridges_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-river-control-001",
+    "file": "clean/clean-river-control-001.jpg",
+    "category": "RIVER_CONTROL",
+    "irregular": false,
+    "caption": "Riverbank protection structure",
+    "why": "The visible riverbank protection appears intact. Actual construction quality and project compliance require separate verification.",
+    "tags": [
+      "river-control",
+      "flood-control",
+      "protection"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-hanging-bridge-001",
+    "file": "clean/clean-hanging-bridge-001.jpg",
+    "category": "HANGING_BRIDGE",
+    "irregular": false,
+    "caption": "Philippine rural hanging bridge",
+    "why": "The selected bridge appears intact in the photograph, with no obvious visible damage.",
+    "tags": [
+      "hanging-bridge",
+      "rural",
+      "transport"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Bridges_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-flood-control-001",
+    "file": "clean/clean-flood-control-001.jpg",
+    "category": "FLOOD_CONTROL_STRUCTURE",
+    "irregular": false,
+    "caption": "Flood control infrastructure",
+    "why": "The selected flood-control structure shows no obvious visible damage in the photograph.",
+    "tags": [
+      "flood-control",
+      "infrastructure",
+      "river"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-river-view-001",
+    "file": "clean/clean-river-view-001.jpg",
+    "category": "RIVER_VIEW",
+    "irregular": false,
+    "caption": "Clear-weather river view",
+    "why": "The image shows a river under ordinary conditions, without obvious signs of infrastructure damage.",
+    "tags": [
+      "river",
+      "landscape",
+      "Philippines"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Rivers_of_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-embankment-001",
+    "file": "clean/clean-embankment-001.jpg",
+    "category": "INTACT_EMBANKMENT",
+    "irregular": false,
+    "caption": "Protected river embankment",
+    "why": "The visible embankment appears intact, with no obvious signs of erosion or displacement in the selected photograph.",
+    "tags": [
+      "embankment",
+      "riverbank",
+      "protection"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Flood_protection_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-bridge-003",
+    "file": "clean/clean-bridge-003.jpg",
+    "category": "BRIDGE_INFRASTRUCTURE",
+    "irregular": false,
+    "caption": "Road bridge in the Philippines",
+    "why": "The visible bridge appears to be in ordinary condition, with no obvious structural anomaly in the selected image.",
+    "tags": [
+      "bridge",
+      "road",
+      "infrastructure"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Bridges_in_the_Philippines",
+    "sourceVerified": false
+  },
+  {
+    "id": "clean-riverbank-003",
+    "file": "clean/clean-river-bank.png",
+    "category": "CLEAN_RIVERBANK",
+    "irregular": false,
+    "caption": "Riverbank with intact surroundings",
+    "why": "The riverbank and surrounding area appear undisturbed in the photograph, with no obvious signs of infrastructure damage.",
+    "tags": [
+      "riverbank",
+      "landscape",
+      "infrastructure"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/Category:Rivers_of_the_Philippines",
+    "sourceVerified": false
+  }
+]

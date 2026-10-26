@@ -1,0 +1,14 @@
+[
+  {
+    "file": "riverside-wall.jpg",
+    "irregular": true,
+    "caption": "Brgy. Riverside flood wall, 100% done",
+    "why": "Ghost project: the sign says complete, but no wall was ever built."
+  },
+  {
+    "file": "dela-paz-wall.jpg",
+    "irregular": false,
+    "caption": "Brgy. Dela Paz flood wall",
+    "why": "The wall exists at the site shown and matches the report."
+  }
+]
